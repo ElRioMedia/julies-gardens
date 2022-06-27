@@ -1,0 +1,314 @@
+/* GLOBAL CSS */
+/* Colour Pallette 1
+#FFFFFF
+#27211E
+#312824
+#7D8260
+#D0AC68 */
+
+/* Colour Pallette 2
+#FFFFFF
+#27211E
+
+#068b78
+#9ed79a
+#f2ff97
+#ffcf5e */
+
+
+
+body {
+  background-color: grey;
+  color: white;
+  font-family: 'Saira Condensed', sans-serif;
+  /* font-family: Futura-light, Trebuchet MS, Arial, sans-serif; */
+  margin: 0;
+}
+
+.logotext {
+  font-family: 'Zeyada', cursive;
+}
+
+/* MENU-HEADER */
+.headerdiv {
+  background-color: #312824;
+  padding: 30px 80px;
+}
+
+h1 {
+  font-weight: 100;
+  margin-top: 0;
+}
+
+.menu {
+  display: inline-block;
+  font-weight: lighter;
+  padding: 0 0.1%;
+}
+
+/* I know this is not right. Will come back to this. */
+.linkedinicon-header {
+  display: inline-block;
+  position: relative;
+  left: 77.5%;
+}
+
+
+
+
+
+/* HOME */
+.l1-home {
+  background-color: #D0AC68;
+  position: relative;
+  height: 1000px;
+}
+.l2-home {
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  left: 80px;
+  bottom: 80px;
+  background-image: url("https://i.insider.com/626beed9c8c8ac0019410d59?width=2000&format=jpeg&auto=webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: contrast(75%);
+}
+.l3-control {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  /* width: 100%;
+  height: 100%; */
+
+}
+.titletext {
+  font-size: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT */
+.l1-about {
+  background-color: #7D8260;
+  height: 680px;
+  position: relative;
+}
+
+.l2-about {
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  left: 80px;
+  bottom: 80px;
+}
+
+.l3-L-about {
+  background-color: white;
+  color: #27211E;
+  height: 520px;
+  float: left;
+  width: 50%;
+
+  /* display: flex;
+  align-items: center; */
+
+}
+
+.l3-R-about {
+  height: 520px;
+  float: left;
+  width: 50%;
+  background-image: url("/Users/KatNine/Documents/- Courses/Web Development/App Brewery/My Coding Sites/Final Projects/Major Project 1 - CSS - Julie's Gardens/images/Mum Classic Pic.jpg");
+  background-attachment: fixed;
+}
+
+.about-text {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 80px;
+  /* top: 50%;
+  transform: translateY(-50%); */
+
+}
+
+
+
+/* DID SUM TWO TOGETHER AND BALANCE 50% WIDTH */
+/* PROBLEM - the margin top and bottom is not working for auto */
+/* SERVICES TITLE */
+/* L1 */
+.page3A {
+  background-color: #D0AC68;
+  height: 340px;
+  position: relative;
+}
+
+/* L2 */
+.innercontainerp3A {
+  background-color: white;
+  color: #27211E;
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  left: 80px;
+  bottom: 80px;
+}
+
+/* L3 */
+.servicestext {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 25px;
+}
+
+/* SERVICES GALLERY */
+/* L1 */
+.page3B {
+  background-color: #D0AC68;
+  height: 340px;
+  position: relative;
+}
+
+/* L2 */
+.innercontainerp3B {
+  background-color: teal;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* L3 */
+.box1, .box2, .box3, .box4 {
+  background-color: white;
+  height: 340px;
+  float: left;
+  width: 25%;
+}
+
+.box1 {
+  background-image: url("/Users/KatNine/Documents/- Courses/Web Development/App Brewery/My Coding Sites/Final Projects/Major Project 1 - CSS - Julie's Gardens/images/English Countryside Gardens.jpg");
+}
+
+.box2 {
+  background-image: url("https://i.pinimg.com/originals/6b/a8/1d/6ba81d91ca48444dabbf2f0163cc8241.jpg");
+}
+
+.box3 {
+  background-image: url("https://www.homestratosphere.com/wp-content/uploads/2018/03/backyard-landscape-design-terraced-hs-mar2018.jpg");
+}
+
+.box4 {
+  background-image: url("https://images.ctfassets.net/zma7thmmcinb/6gNO8CW2AeuN43klcJ3KAo/1e7ad972f55284d1c2c2515561fa17a1/calculate-how-many-vegetables-to-plant-lead.jpg");
+  background-repeat: no-repeat;
+
+}
+
+/* CONTACT */
+.l1-contact {
+  background-color: #7D8260;
+  height: 680px;
+  position: relative;
+}
+
+.l2-contact {
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  left: 80px;
+  bottom: 80px;
+}
+
+.l3-L-contact-image {
+  /* background-image: url("/Users/KatNine/Desktop/My Coding Sites/Final Project - Mum's Site/images/English Countryside Gardens.jpg"); */
+  background-image: url("https://media.istockphoto.com/photos/landscape-architect-design-backyard-plan-for-villa-picture-id508883288?k=20&m=508883288&s=612x612&w=0&h=xp_z8vFVS22hevERZdiymRbMvhxsuy5hUhTJBWe41e0=");
+  background-attachment: fixed;
+  height: 520px;
+  float: left;
+  width: 50%;
+}
+
+.l3-R-contact {
+  background-color: white;
+  color: #27211E;
+  height: 520px;
+  float: left;
+  width: 50%;
+}
+
+.l4-contact-text {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 80px;
+}
+
+/* FOOTER */
+/* L1 - Frame */
+footer {
+  background-color: #312824;
+  position: relative;
+  height: 150px;
+}
+
+/* L2 - Inner Frame */
+.l2-footer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* L3 - Columns */
+.l2-1of4-footer, .l2-2of4-footer, .l2-3of4-footer, .l2-4of4-footer {
+
+  float: left;
+  width: 25%;
+  height: 150px;
+}
+
+/* L4 - Control */
+.box1-footer {
+  /* width: 80%; */
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.box2-footer {
+  margin-top: 92px;
+  margin-left: 80px;
+}
+
+.box3-footer {
+  margin-top: 66px;
+  margin-left: 80px;
+}
+
+.box4-footer {
+  margin-top: 92px;
+  margin-left: 80px;
+}
+
+.footermarginreset {
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+/* OVER-RIDING STYLES */
+/* MUST GIVE WIDTH TO ALIGN CENTRE */
