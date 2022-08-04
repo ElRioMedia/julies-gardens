@@ -23,11 +23,18 @@ body {
 .my-padding {
   padding: 80px;
 }
+
 /* Header and Footer positioning and colour theme settings */
 .header-div, footer {
   position: relative;
   background-color: #312824;
   color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  /* text-decoration-color: white; */
 }
 
 /* White background */
@@ -193,6 +200,7 @@ hr {
   background-position: center;
   background-size: cover;
 }
+
 /* Need to make these file formats consistent! */
 .box1 {
   background-image: url("../images/english-coutryside-gardens.jpg");
@@ -299,6 +307,7 @@ footer {
   margin-top: 92px;
   margin-left: 80px;
 }
+
 /* Resetting n/a as * global setting rule already executed by now */
 .footermarginreset {
   margin-top: 0;

@@ -9,7 +9,7 @@
   <!-- Page Title -->
   <title>Julie's Gardens</title>
   <!-- Link to CSS Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <!-- Font Awesome for LinkedIn Icon -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   <!-- Importing unique fonts -->
@@ -32,20 +32,28 @@
   interpret / understand. Not good. This should be added in. -->
 
   <!-- Outer container module -->
-  <div class="header-div">
+  <div id="header" class="header-div">
     <!-- Improper use of h1 here. This could be an h2, then keep the one h1 per
     page as the most descriptive title element, which is in the hero section,
     then lower the heading level of all others -->
     <h1 class="logo-text">Julie's Gardens</h1>
     <hr>
-    <!-- Should be using ul and li instead here -->
-    <!-- No anchor links set yet -->
-    <p class="menu-items">Home</p>
-    <p class="menu-items">About</p>
-    <p class="menu-items">Services</p>
-    <p class="menu-items">Testimonials</p>
-    <p class="menu-items">Contact</p>
-    <i class='linkedin-icon fa fa-linkedin'></i>
+    <!-- Anchor links added below referencing id's. Should be using section
+    elements instead of divs. Should also be using ul and li instead of p's here. -->
+    <a href="#header">
+      <p class="menu-items">Home</p>
+    </a>
+    <a href="#about">
+      <p class="menu-items">About</p>
+    </a>
+    <a href="#services">
+      <p class="menu-items">Services</p>
+    </a>
+    <!-- <a href="#testimonials"><p class="menu-items">Testimonials</p></a> -->
+    <a href="#contact">
+      <p class="menu-items">Contact</p>
+    </a>
+    <a href="https://www.linkedin.com" target="_blank"><i class='linkedin-icon fa fa-linkedin'></i></a>
   </div>
 
   <!-- ---------- HERO SECTION ---------- -->
@@ -74,7 +82,7 @@
 
   <!-- Outer container module -->
   <!-- ROW -->
-  <div class="row about-container my-padding green-background">
+  <div id="about" class="row about-container my-padding green-background">
     <!-- LEFT COLUMN -->
     <!-- Float colum left and inherit height -->
     <div class="float-50 left-container white-background">
@@ -103,7 +111,7 @@
   colours to the other sections -->
 
   <!-- Outer container module -->
-  <div class="services-container my-padding brown-background">
+  <div id="services" class="services-container my-padding brown-background">
     <div class="my-padding white-background">
       <h1 class="brown-text">Services</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
@@ -137,7 +145,7 @@
   the left and right floated boxes. Logical, but confusing to look at. -->
 
   <!-- Level 1, Outer container module -->
-  <div class="l1-contact green-background">
+  <div id="contact" class="l1-contact green-background">
     <!-- Level 2, wrapper -->
     <div class="l2-contact">
       <!-- Level 3, left container -->
@@ -203,7 +211,7 @@
     <div class="l2-2of4-footer">
       <!-- L3 -->
       <div class="box2-footer">
-        <!-- I had originall reset the top and bottom margins to 0 here. I have
+        <!-- I had originally reset the top and bottom margins to 0 here. I have
         recently refactored with in the CSS with a global * rule, so this is not
         needed now. -->
         <p class="footermarginreset">Author: El Rio Media</p>
