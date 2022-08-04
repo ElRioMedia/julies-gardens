@@ -160,7 +160,7 @@ hr {
 /* PROBLEM FLOAT TO BE FIXED! */
 .right-container {
   height: inherit;
-  background-image: url("/images/julie-classic-photo.jpg");
+  background-image: url("../images/julie-classic-photo.jpg");
   /* EVERYTHING GOES WRONG WHEN THIS IS CHANGED TO FIXED! */
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -195,7 +195,7 @@ hr {
 }
 /* Need to make these file formats consistent! */
 .box1 {
-  background-image: url("images/english-coutryside-gardens.jpg");
+  background-image: url("../images/english-coutryside-gardens.jpg");
 }
 
 .box2 {
