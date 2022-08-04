@@ -147,7 +147,7 @@ hr {
 .right-container {
   /* position: inherit; */
   height: inherit;
-  background-image: url("/Users/KatNine/Documents/- Courses/Web Development/App Brewery/Final Projects (Versions)/2 Julie's Gardens (Versions)/Vanilla CSS Static Site - Julie's Gardens_v1/images/julie-classic-photo.jpg");
+  background-image: url("/images/julie-classic-photo.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: right;
@@ -201,7 +201,7 @@ hr {
 }
 
 .box1 {
-  background-image: url("/Users/KatNine/Documents/- Courses/Web Development/App Brewery/Final Projects (Versions)/2 Julie's Gardens (Versions)/Vanilla CSS Static Site - Julie's Gardens_v1/images/english-coutryside-gardens.jpg");
+  background-image: url("images/english-coutryside-gardens.jpg");
 }
 
 .box2 {
