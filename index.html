@@ -1,29 +1,45 @@
+<!-- Please visit the readme file to see the writeup about this website -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<!-- html header containing links to my stylesheet, fonts and font-awesome icons -->
+<!-- html head containing links to my stylesheets, fonts and font-awesome icons -->
 
 <head>
+  <!-- No viewport responsiveness enabled for mobile optimisation! -->
   <meta charset="utf-8">
+  <!-- Page Title -->
   <title>Julie's Gardens</title>
   <!-- Link to CSS Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
   <!-- Font Awesome for LinkedIn Icon -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <!-- Google Fonts -->
+  <!-- Importing unique fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&family=Zeyada&display=swap" rel="stylesheet">
+  <!-- Google Fonts - Not required as have linked above -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Importing unique font -->
-  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&family=Zeyada&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- No opening Main element -->
+  <!-- No <main></main> -->
+  <!-- No <header></header> -->
+  <!-- No <nav></nav> -->
+  <!-- No <section></section> -->
+
   <!-- ---------- HEADER SECTION ---------- -->
-  <!-- No header or nav or list items elements used, just an array of divs, and paragraph elements. -->
-  <!-- This will make it harder for browser and screen readers to interpret and understand the description of this section of the page -->
+  <!-- No use of Header, Nav or List Items elements, just an array of Divs and
+  Paragraph elements. This will make it harder for browser and screen readers to
+  interpret / understand. Not good. This should be added in. -->
+
+  <!-- Outer container module -->
   <div class="header-div">
-    <!-- Improper use of h1 here. This could be an h2, then keep the one h1 per page as the most descriptive title element, which is in the hero section, then lower the heading level of all others -->
+    <!-- Improper use of h1 here. This could be an h2, then keep the one h1 per
+    page as the most descriptive title element, which is in the hero section,
+    then lower the heading level of all others -->
     <h1 class="logo-text">Julie's Gardens</h1>
     <hr>
+    <!-- Should be using ul and li instead here -->
+    <!-- No anchor links set yet -->
     <p class="menu-items">Home</p>
     <p class="menu-items">About</p>
     <p class="menu-items">Services</p>
@@ -31,85 +47,113 @@
     <p class="menu-items">Contact</p>
     <i class='linkedin-icon fa fa-linkedin'></i>
   </div>
+
   <!-- ---------- HERO SECTION ---------- -->
-  <!-- outer container module -->
+  <!-- creating a module with an outer frame, using padding for border effect. -->
+
+  <!-- Outer container module -->
   <div class="hero-container my-padding mustard-background">
     <!-- image container -->
     <div class="image-container">
-      <!-- div container to centralise the h1. ideally i would not need this div, but due to positioning settings of parent, i found i required this to centre align my heading. -->
+      <!-- div container to centralise the h1. ideally i would not need this div,
+      but due to positioning settings of parent, i found i required this to
+      centre align my heading. -->
       <div class="vert-aligning-div">
         <!-- title heading -->
         <h1 class="title-text">Julie's Landscape Gardening Service</h1>
       </div>
     </div>
   </div>
+
   <!-- ---------- ABOUT SECTION ---------- -->
+  <!-- Having big issues here with using float with CSS background-attachment: fixed;
+  Currently the image seems not big enough for to give the correct fixed effect.
+  If you repeat on the y axis the cut looks bad. If you spread the image out the
+  positioning doesn't scale equally across different screen sizes. This need to
+  be revisited. -->
+
+  <!-- Outer container module -->
   <!-- ROW -->
   <div class="row about-container my-padding green-background">
-    <!-- COLUMN -->
-    <!-- float colum left and inherit height -->
-    <div class="column-wrapper left-container white-background">
-      <!-- adding another div here to position padding equal to children -->
+    <!-- LEFT COLUMN -->
+    <!-- Float colum left and inherit height -->
+    <div class="float-50 left-container white-background">
+      <!-- Adding another div here to position padding equal to children -->
       <div class="my-padding">
-        <!-- these two have now been padded as desired -->
+        <!-- These two have now been padded as desired -->
         <h1 class="green-text">About</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque tincidunt urna rhoncus rutrum vulputate. Pellentesque pulvinar auctor tellus, sed sodales quam suscipit
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          nec dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque
+          tincidunt urna rhoncus rutrum vulputate. Pellentesque pulvinar auctor
+          tellus, sed sodales quam suscipit
           ut.</p>
       </div>
     </div>
-    <!-- COLUMN -->
-    <!-- float colum left and inherit height -->
-    <div class="column-wrapper">
+    <!-- RIGHT COLUMN -->
+    <!-- Float colum left and inherit height -->
+    <div class="float-50">
       <div class="right-container">
       </div>
     </div>
   </div>
 
   <!-- ---------- SERVICES SECTION ---------- -->
+  <!-- Creating a small area for some extra text, which would describe a little
+  about the services. Using Using same padding in the module, but contrasting
+  colours to the other sections -->
+
+  <!-- Outer container module -->
   <div class="services-container my-padding brown-background">
-    <!-- <div class="services-container my-padding mustard-background"> -->
-      <div class="services-text my-padding white-background">
-        <h1 class="brown-text">Services</h1>
-        <!-- <h1 class="mustard-text">Services</h1> -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque tincidunt urna rhoncus rutrum vulputate. Pellentesque pulvinar auctor tellus, sed sodales quam suscipit
-          ut.</p>
-      </div>
+    <div class="my-padding white-background">
+      <h1 class="brown-text">Services</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
+        dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque tincidunt
+        urna rhoncus rutrum vulputate. Pellentesque pulvinar auctor tellus, sed
+        sodales quam suscipit
+        ut.</p>
+    </div>
   </div>
 
   <!-- ---------- GALLERY SECTION ---------- -->
-  <!-- SERVICES GALLERY -->
-  <!-- CONTAINER -->
+  <!-- Creating a simple gallery container here with 4 images. Floating left
+  with 25% split. -->
+
+  <!-- Outer container module -->
+  <!-- ROW | CONTAINER -->
   <div class="gallery-container">
-    <!-- ROW -->
-    <!-- <div class="row"> -->
-      <!-- COLUMNS -->
-      <div class="box1">
-      </div>
-      <div class="box2">
-      </div>
-      <div class="box3">
-      </div>
-      <div class="box4">
-      </div>
-    <!-- </div> -->
+    <!-- COLUMNS -->
+    <div class="box1 float-25">
+    </div>
+    <div class="box2 float-25">
+    </div>
+    <div class="box3 float-25">
+    </div>
+    <div class="box4 float-25">
+    </div>
   </div>
+
   <!-- ---------- CONTACT ---------- -->
-  <!-- CONTACT -->
+  <!-- Using l1 l2 and l3 as naming conventions for div depth. And L and R as
+  the left and right floated boxes. Logical, but confusing to look at. -->
 
+  <!-- Level 1, Outer container module -->
   <div class="l1-contact green-background">
-
+    <!-- Level 2, wrapper -->
     <div class="l2-contact">
-
-      <div class="l3-L-contact-image">
-      </div>
-
+      <!-- Level 3, left container -->
+      <div class="l3-L-contact-image"></div>
+      <!-- Level 3, right container -->
       <div class="l3-R-contact">
+        <!-- Level 4 -->
         <div class="l4-contact-text">
+          <!-- Details -->
           <h1 class="green-text">Contact</h1>
-          <p>Left align this text and the heading.
-            Make it flush to my 80px left vertical margin.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque tincidunt urna rhoncus rutrum vulputate. Pellentesque pulvinar auctor tellus, sed sodales quam suscipit
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            nec dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque
+            tincidunt urna rhoncus rutrum vulputate. Pellentesque pulvinar auctor
+            tellus, sed sodales quam suscipit
             ut.</p>
+          <!-- Missed putting in phone number and e-mail here -->
         </div>
       </div>
     </div>
@@ -117,8 +161,9 @@
 
 
   <!-- ---------- GOOGLE MAPS ---------- -->
+  <!-- Still needs to be hooked up to Google API -->
 
-  <h1>My First Google Map</h1>
+  <h1 class="gmaps-text">My First Google Map</h1>
 
   <div id="googleMap" style="width:100%;height:400px;"></div>
 
@@ -136,6 +181,15 @@
 
   <!-- ---------- FOOTER ---------- -->
 
+  <!-- The Good news! I seem to have found one semantic HTML element! Well done!
+  The Bad news! What a complete mess of divs used to create this layout solution,
+  made worse with a very confusing use of class naming conventions.
+
+  Since I am moving using a static positioning technique with px, I would
+  definately get rid of the wrappers around each of these 4 boxes, and move the
+  text elements accordingly. This would be more lean and dry.
+
+  I would change the class names here to make this more readable -->
   <footer>
     <!-- L2 -->
     <div class="l2-1of4-footer">
@@ -149,6 +203,9 @@
     <div class="l2-2of4-footer">
       <!-- L3 -->
       <div class="box2-footer">
+        <!-- I had originall reset the top and bottom margins to 0 here. I have
+        recently refactored with in the CSS with a global * rule, so this is not
+        needed now. -->
         <p class="footermarginreset">Author: El Rio Media</p>
       </div>
     </div>
@@ -170,5 +227,7 @@
       </div>
     </div>
   </footer>
+
+  <!-- </main> Closing main element would go here. -->
 
 </body>

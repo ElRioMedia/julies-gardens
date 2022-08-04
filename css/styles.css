@@ -1,8 +1,7 @@
 /* ---------- Colour Pallette 1 ---------- */
 /* #FFFFFF #27211E #312824 #7D8260 #D0AC68 */
-
 /* ---------- GLOBAL ELEMENTS ---------- */
-/* remove all default padding and margin so i can build consistently */
+/* Remove all default padding and margin so I can build consistently. */
 * {
   margin: 0;
   padding: 0;
@@ -12,78 +11,93 @@ p {
   margin-top: 1rem;
 }
 
-/* set font across the body */
-body, html {
-  height: 100vh;
-  /* height: 100%; */
+/* Font settings across the body. Height settings using %. */
+body {
+  height: 100%;
   font-family: 'Saira Condensed', sans-serif;
   color: #27211E;
 }
 
 /* ---------- MODULES ---------- */
-/* setting standardised padding to be re-used */
+/* Setting standardised padding to be re-used. This creates the border effect across all modules. */
 .my-padding {
   padding: 80px;
 }
+/* Header and Footer positioning and colour theme settings */
+.header-div, footer {
+  position: relative;
+  background-color: #312824;
+  color: white;
+}
 
-/* may not need this.. come back and check */
+/* White background */
 .white-background {
   background-color: white;
 }
 
+/* Mustard background */
 .mustard-background {
   background-color: #D0AC68;
-}
-.mustard-text {
-  color: #D0AC68;
 }
 
 .green-background {
   background-color: #7D8260;
 }
-.green-text {
-  color: #7D8260;
-}
+
 .brown-background {
   background-color: #27211E;
 }
+
+/* Font colouring modules */
+.mustard-text {
+  color: #D0AC68;
+}
+
+.green-text {
+  color: #7D8260;
+}
+
 .brown-text {
   color: #27211E;
 }
-/* not used yet... */
+
+/* Vertical Align Settings (not used yet...) */
 .vertical-align {
   vertical-align: middle;
 }
 
+/* 2 Column Float Settings. height setting n/a */
 .float-50 {
-
+  float: left;
+  width: 50%;
+  height: inherit;
 }
 
+/* 4 Column Float Settings (not used yet...) */
 .float-25 {
-
+  float: left;
+  width: 25%;
 }
 
 /* ---------- HEADER | MENU SECTION ---------- */
-/* unique padding here so using shorthand, and not my preset */
+/* Unique padding here so using shorthand, and not my preset */
+/* One-off colour  */
 .header-div {
-  position: relative;
-  background-color: #312824;
-  color: white;
   padding: 40px 80px;
 }
 
-/* unique settings for logo font-styling */
+/* Unique settings for logo font-styling */
 .logo-text {
   font-weight: 100;
   font-family: 'Zeyada', cursive;
 }
 
-/* using margin setting for top and bottom spacing */
+/* Using margin rule for top and bottom spacing */
 hr {
   margin: 16px 0;
 }
 
-/* setting menu item inline here (rather than the default stacked block) */
+/* Setting menu item inline here (rather than the default stacked block) */
 .menu-items {
   display: inline;
   padding: 0 4px;
@@ -131,75 +145,55 @@ hr {
 }
 
 /* ---------- ABOUT SECTION ---------- */
-/* creating about container and setting static height in px */
+/* Ssetting static height in px */
 .about-container {
   height: 400px;
 }
 
-/* left floated container with about text */
-/* inheriting height from parent */
+/* Left floated container with about text. Inheriting height from parent */
+/* PROBLEM FLOAT TO BE FIXED! */
 .left-container {
-  /* position: sticky; */
+  height: inherit;
 }
 
-/* right floated container with image of Julie */
-/* inheriting height from parent */
+/* Right floated container with image of Julie. Inheriting height from parent */
+/* PROBLEM FLOAT TO BE FIXED! */
 .right-container {
-  /* position: inherit; */
   height: inherit;
   background-image: url("/images/julie-classic-photo.jpg");
+  /* EVERYTHING GOES WRONG WHEN THIS IS CHANGED TO FIXED! */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50%;
-  /* background-size: cover; */
-  /* everything goes wrong with this fixed */
-  /* background-attachment: fixed; */
-  /* background-repeat: no-repeat; */
-  /* background-position: right; */
-  /* background-position-y: 275px; */
-  /* contain is wrong below */
-  /* background-size: contain; */
 }
 
-/* giving unique padding to text elements */
-.about-title {
-  margin
-}
-
-/* Clear floats after the columns */
+/* Clearing floats solution not working after the columns */
 /* .row:after {
   content: "";
   display: table;
   clear: both;
 } */
-.column-wrapper {
-  float: left;
-  width: 50%;
-  height: inherit;
-}
-
 /* ---------- SERVICES SECTION ---------- */
+/* Not required anymore as padding modules applied */
 .services-container {
   /* height: 340px; */
 }
 
-.services-text {}
-
 /* ---------- GALLERY SECTION ---------- */
+/* Setting height for gallery container */
 .gallery-container {
-  /* height: 100%; */
   height: 340px;
 }
 
+/* Settings for the 4 floated columns */
+/* Refactoring required */
 .box1, .box2, .box3, .box4 {
   height: 340px;
-  float: left;
-  width: 25%;
   background-position: center;
   background-size: cover;
 }
-
+/* Need to make these file formats consistent! */
 .box1 {
   background-image: url("images/english-coutryside-gardens.jpg");
 }
@@ -217,6 +211,7 @@ hr {
 }
 
 /* ---------- CONTACT ---------- */
+/* More refactoring required... */
 .l1-contact {
   background-color: #7D8260;
   height: 680px;
@@ -255,14 +250,18 @@ hr {
 }
 
 /* ---------- GOOGLE MAPS ---------- */
+/* Positioning Title */
+.gmaps-text {
+  margin-left: 80px;
+}
+
 /* ---------- FOOTER ---------- */
+/* Height settings for footer. */
 footer {
-  background-color: #312824;
-  color: white;
-  position: relative;
   height: 150px;
 }
 
+/* All this below needs tidying and refactoring. */
 /* L2 - Inner Frame */
 .l2-footer {
   position: absolute;
@@ -300,7 +299,7 @@ footer {
   margin-top: 92px;
   margin-left: 80px;
 }
-
+/* Resetting n/a as * global setting rule already executed by now */
 .footermarginreset {
   margin-top: 0;
   margin-bottom: 0;
