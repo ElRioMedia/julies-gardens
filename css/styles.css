@@ -1,207 +1,207 @@
-/* GLOBAL CSS */
-/* Colour Pallette 1
-#FFFFFF
-#27211E
-#312824
-#7D8260
-#D0AC68 */
+/* ---------- Colour Pallette 1 ---------- */
+/* #FFFFFF #27211E #312824 #7D8260 #D0AC68 */
 
-/* Colour Pallette 2
-#FFFFFF
-#27211E
-
-#068b78
-#9ed79a
-#f2ff97
-#ffcf5e */
-
-
-
-body {
-  background-color: grey;
-  color: white;
-  font-family: 'Saira Condensed', sans-serif;
-  /* font-family: Futura-light, Trebuchet MS, Arial, sans-serif; */
+/* ---------- GLOBAL ELEMENTS ---------- */
+/* remove all default padding and margin so i can build consistently */
+* {
   margin: 0;
+  padding: 0;
 }
 
-.logotext {
+p {
+  margin-top: 1rem;
+}
+
+/* set font across the body */
+body, html {
+  height: 100vh;
+  /* height: 100%; */
+  font-family: 'Saira Condensed', sans-serif;
+  color: #27211E;
+}
+
+/* ---------- MODULES ---------- */
+/* setting standardised padding to be re-used */
+.my-padding {
+  padding: 80px;
+}
+
+/* may not need this.. come back and check */
+.white-background {
+  background-color: white;
+}
+
+.mustard-background {
+  background-color: #D0AC68;
+}
+.mustard-text {
+  color: #D0AC68;
+}
+
+.green-background {
+  background-color: #7D8260;
+}
+.green-text {
+  color: #7D8260;
+}
+.brown-background {
+  background-color: #27211E;
+}
+.brown-text {
+  color: #27211E;
+}
+/* not used yet... */
+.vertical-align {
+  vertical-align: middle;
+}
+
+.float-50 {
+
+}
+
+.float-25 {
+
+}
+
+/* ---------- HEADER | MENU SECTION ---------- */
+/* unique padding here so using shorthand, and not my preset */
+.header-div {
+  position: relative;
+  background-color: #312824;
+  color: white;
+  padding: 40px 80px;
+}
+
+/* unique settings for logo font-styling */
+.logo-text {
+  font-weight: 100;
   font-family: 'Zeyada', cursive;
 }
 
-/* MENU-HEADER */
-.headerdiv {
-  background-color: #312824;
-  padding: 30px 80px;
+/* using margin setting for top and bottom spacing */
+hr {
+  margin: 16px 0;
 }
 
-h1 {
-  font-weight: 100;
-  margin-top: 0;
+/* setting menu item inline here (rather than the default stacked block) */
+.menu-items {
+  display: inline;
+  padding: 0 4px;
 }
 
-.menu {
-  display: inline-block;
-  font-weight: lighter;
-  padding: 0 0.1%;
-}
-
-/* I know this is not right. Will come back to this. */
-.linkedinicon-header {
-  display: inline-block;
-  position: relative;
-  left: 77.5%;
-}
-
-
-
-
-
-/* HOME */
-.l1-home {
-  background-color: #D0AC68;
-  position: relative;
-  height: 1000px;
-}
-.l2-home {
-  background-color: white;
+/* position linkedin icon to be flush with to the margin */
+.linkedin-icon {
   position: absolute;
-  top: 80px;
   right: 80px;
-  left: 80px;
-  bottom: 80px;
+  bottom: 45px;
+}
+
+/* ---------- HERO SECTION ---------- */
+/* colouring module background, giving height and padding */
+.hero-container {
+  color: white;
+  height: 720px;
+}
+
+/* adding hero image here, using the fixed scroll for my preferred aesthic styling */
+.image-container {
   background-image: url("https://i.insider.com/626beed9c8c8ac0019410d59?width=2000&format=jpeg&auto=webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /* setting to cover here so it stretches out nicely on bigger screens. cuts off otherwise. */
+  background-size: cover;
   filter: contrast(75%);
+  height: 100%;
+  width: 100%;
 }
-.l3-control {
+
+/* i am using this extra div to centre align the h1 below */
+.vert-aligning-div {
   position: absolute;
   top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* now centre aligning the h1 text and giving unique font-style settings */
+.title-text {
   text-align: center;
-  /* width: 100%;
-  height: 100%; */
-
-}
-.titletext {
   font-size: 80px;
+  font-weight: 100;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* ABOUT */
-.l1-about {
-  background-color: #7D8260;
-  height: 680px;
-  position: relative;
+/* ---------- ABOUT SECTION ---------- */
+/* creating about container and setting static height in px */
+.about-container {
+  height: 400px;
 }
 
-.l2-about {
-  background-color: white;
-  position: absolute;
-  top: 80px;
-  right: 80px;
-  left: 80px;
-  bottom: 80px;
+/* left floated container with about text */
+/* inheriting height from parent */
+.left-container {
+  /* position: sticky; */
 }
 
-.l3-L-about {
-  background-color: white;
-  color: #27211E;
-  height: 520px;
-  float: left;
-  width: 50%;
-
-  /* display: flex;
-  align-items: center; */
-
-}
-
-.l3-R-about {
-  height: 520px;
-  float: left;
-  width: 50%;
-  background-image: url("/Users/KatNine/Documents/- Courses/Web Development/App Brewery/My Coding Sites/Final Projects/Major Project 1 - CSS - Julie's Gardens/images/Mum Classic Pic.jpg");
+/* right floated container with image of Julie */
+/* inheriting height from parent */
+.right-container {
+  /* position: inherit; */
+  height: inherit;
+  background-image: url("/Users/KatNine/Documents/- Courses/Web Development/App Brewery/Final Projects (Versions)/2 Julie's Gardens (Versions)/Vanilla CSS Static Site - Julie's Gardens_v1/images/julie-classic-photo.jpg");
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50%;
+  /* background-size: cover; */
+  /* everything goes wrong with this fixed */
+  /* background-attachment: fixed; */
+  /* background-repeat: no-repeat; */
+  /* background-position: right; */
+  /* background-position-y: 275px; */
+  /* contain is wrong below */
+  /* background-size: contain; */
 }
 
-.about-text {
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 80px;
-  /* top: 50%;
-  transform: translateY(-50%); */
-
+/* giving unique padding to text elements */
+.about-title {
+  margin
 }
 
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+.column-wrapper {
+  float: left;
+  width: 50%;
+  height: inherit;
+}
 
+/* ---------- SERVICES SECTION ---------- */
+.services-container {
+  /* height: 340px; */
+}
 
-/* DID SUM TWO TOGETHER AND BALANCE 50% WIDTH */
-/* PROBLEM - the margin top and bottom is not working for auto */
-/* SERVICES TITLE */
-/* L1 */
-.page3A {
-  background-color: #D0AC68;
+.services-text {}
+
+/* ---------- GALLERY SECTION ---------- */
+.gallery-container {
+  /* height: 100%; */
   height: 340px;
-  position: relative;
 }
 
-/* L2 */
-.innercontainerp3A {
-  background-color: white;
-  color: #27211E;
-  position: absolute;
-  top: 80px;
-  right: 80px;
-  left: 80px;
-  bottom: 80px;
-}
-
-/* L3 */
-.servicestext {
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 25px;
-}
-
-/* SERVICES GALLERY */
-/* L1 */
-.page3B {
-  background-color: #D0AC68;
-  height: 340px;
-  position: relative;
-}
-
-/* L2 */
-.innercontainerp3B {
-  background-color: teal;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-/* L3 */
 .box1, .box2, .box3, .box4 {
-  background-color: white;
   height: 340px;
   float: left;
   width: 25%;
+  background-position: center;
+  background-size: cover;
 }
 
 .box1 {
-  background-image: url("/Users/KatNine/Documents/- Courses/Web Development/App Brewery/My Coding Sites/Final Projects/Major Project 1 - CSS - Julie's Gardens/images/English Countryside Gardens.jpg");
+  background-image: url("/Users/KatNine/Documents/- Courses/Web Development/App Brewery/Final Projects (Versions)/2 Julie's Gardens (Versions)/Vanilla CSS Static Site - Julie's Gardens_v1/images/english-coutryside-gardens.jpg");
 }
 
 .box2 {
@@ -214,11 +214,9 @@ h1 {
 
 .box4 {
   background-image: url("https://images.ctfassets.net/zma7thmmcinb/6gNO8CW2AeuN43klcJ3KAo/1e7ad972f55284d1c2c2515561fa17a1/calculate-how-many-vegetables-to-plant-lead.jpg");
-  background-repeat: no-repeat;
-
 }
 
-/* CONTACT */
+/* ---------- CONTACT ---------- */
 .l1-contact {
   background-color: #7D8260;
   height: 680px;
@@ -245,7 +243,6 @@ h1 {
 
 .l3-R-contact {
   background-color: white;
-  color: #27211E;
   height: 520px;
   float: left;
   width: 50%;
@@ -257,10 +254,11 @@ h1 {
   margin-top: 80px;
 }
 
-/* FOOTER */
-/* L1 - Frame */
+/* ---------- GOOGLE MAPS ---------- */
+/* ---------- FOOTER ---------- */
 footer {
   background-color: #312824;
+  color: white;
   position: relative;
   height: 150px;
 }
@@ -276,7 +274,6 @@ footer {
 
 /* L3 - Columns */
 .l2-1of4-footer, .l2-2of4-footer, .l2-3of4-footer, .l2-4of4-footer {
-
   float: left;
   width: 25%;
   height: 150px;
@@ -307,8 +304,4 @@ footer {
 .footermarginreset {
   margin-top: 0;
   margin-bottom: 0;
-
 }
-
-/* OVER-RIDING STYLES */
-/* MUST GIVE WIDTH TO ALIGN CENTRE */

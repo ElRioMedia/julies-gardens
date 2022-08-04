@@ -1,107 +1,88 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
+<!-- html header containing links to my stylesheet, fonts and font-awesome icons -->
 
 <head>
   <meta charset="utf-8">
   <title>Julie's Gardens</title>
+  <!-- Link to CSS Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
   <!-- Font Awesome for LinkedIn Icon -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Importing unique font -->
   <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&family=Zeyada&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <!-- MENU - HEADER -->
-<main>
-  <!-- L1 -->
-  <header>
-    <!-- L2 -->
-    <div class="headerdiv">
-      <h1 class="logotext">Julie's Gardens</h1>
-      <hr>
-      <p class="menu">Home</p>
-      <p class="menu">About</p>
-      <p class="menu">Services</p>
-      <p class="menu">Testimonials</p>
-      <p class="menu">Contact</p>
-      <span class="linkedinicon-header">
-        <i class='fa fa-linkedin'></i>
-      </span>
-    </div>
-  </header>
-
-  <!-- HOME -->
-
-  <!-- L1 -->
-  <div class="l1-home">
-    <!-- L2 -->
-    <div class="l2-home">
-      <!-- L3 -->
-      <div class="l3-control">
-        <h1 class="titletext">Julie's Landscape Gardening Service</h1>
-      </div>
-
-    </div>
-
+  <!-- ---------- HEADER SECTION ---------- -->
+  <!-- No header or nav or list items elements used, just an array of divs, and paragraph elements. -->
+  <!-- This will make it harder for browser and screen readers to interpret and understand the description of this section of the page -->
+  <div class="header-div">
+    <!-- Improper use of h1 here. This could be an h2, then keep the one h1 per page as the most descriptive title element, which is in the hero section, then lower the heading level of all others -->
+    <h1 class="logo-text">Julie's Gardens</h1>
+    <hr>
+    <p class="menu-items">Home</p>
+    <p class="menu-items">About</p>
+    <p class="menu-items">Services</p>
+    <p class="menu-items">Testimonials</p>
+    <p class="menu-items">Contact</p>
+    <i class='linkedin-icon fa fa-linkedin'></i>
   </div>
-
-  <!-- ABOUT -->
-
-  <!-- L1 -->
-  <div class="l1-about">
-    <!-- L2 -->
-    <div class="l2-about">
-      <!-- L3 -->
-      <div class="l3-L-about">
-        <div class="about-text">
-          <h1>About</h1>
-          <p>Left align this text and the heading.
-            Make it flush to my 80px left vertical margin.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque tincidunt urna rhoncus rutrum vulputate. Pellentesque pulvinar auctor tellus, sed sodales quam suscipit
-            ut.</p>
-        </div>
+  <!-- ---------- HERO SECTION ---------- -->
+  <!-- outer container module -->
+  <div class="hero-container my-padding mustard-background">
+    <!-- image container -->
+    <div class="image-container">
+      <!-- div container to centralise the h1. ideally i would not need this div, but due to positioning settings of parent, i found i required this to centre align my heading. -->
+      <div class="vert-aligning-div">
+        <!-- title heading -->
+        <h1 class="title-text">Julie's Landscape Gardening Service</h1>
       </div>
-      <!-- L3 -->
-      <div class="l3-R-about">
+    </div>
+  </div>
+  <!-- ---------- ABOUT SECTION ---------- -->
+  <!-- ROW -->
+  <div class="row about-container my-padding green-background">
+    <!-- COLUMN -->
+    <!-- float colum left and inherit height -->
+    <div class="column-wrapper left-container white-background">
+      <!-- adding another div here to position padding equal to children -->
+      <div class="my-padding">
+        <!-- these two have now been padded as desired -->
+        <h1 class="green-text">About</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque tincidunt urna rhoncus rutrum vulputate. Pellentesque pulvinar auctor tellus, sed sodales quam suscipit
+          ut.</p>
+      </div>
+    </div>
+    <!-- COLUMN -->
+    <!-- float colum left and inherit height -->
+    <div class="column-wrapper">
+      <div class="right-container">
       </div>
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-  <!-- SERVICES TITLE -->
-  <!-- L1 -->
-  <div class="page3A">
-    <!-- L2 -->
-    <div class="innercontainerp3A">
-      <!-- L3 -->
-      <div class="servicestext">
-        <h1>Services</h1>
-        <p>Left align this text and the heading.
-          Make it flush to my 80px left vertical margin.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque tincidunt urna rhoncus rutrum vulputate.</p>
+  <!-- ---------- SERVICES SECTION ---------- -->
+  <div class="services-container my-padding brown-background">
+    <!-- <div class="services-container my-padding mustard-background"> -->
+      <div class="services-text my-padding white-background">
+        <h1 class="brown-text">Services</h1>
+        <!-- <h1 class="mustard-text">Services</h1> -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque tincidunt urna rhoncus rutrum vulputate. Pellentesque pulvinar auctor tellus, sed sodales quam suscipit
+          ut.</p>
       </div>
-    </div>
   </div>
 
-
-
+  <!-- ---------- GALLERY SECTION ---------- -->
   <!-- SERVICES GALLERY -->
-  <!-- L1 -->
-  <div class="page3B">
-    <!-- L2 -->
-    <div class="innercontainerp3B">
-      <!-- L3 -->
+  <!-- CONTAINER -->
+  <div class="gallery-container">
+    <!-- ROW -->
+    <!-- <div class="row"> -->
+      <!-- COLUMNS -->
       <div class="box1">
       </div>
       <div class="box2">
@@ -110,31 +91,21 @@
       </div>
       <div class="box4">
       </div>
-    </div>
+    <!-- </div> -->
   </div>
-
-
-
-
-
-
-
-
-
-
+  <!-- ---------- CONTACT ---------- -->
   <!-- CONTACT -->
 
-  <!-- L1 -->
-  <div class="l1-contact">
-    <!-- L2 -->
+  <div class="l1-contact green-background">
+
     <div class="l2-contact">
-      <!-- L3-L -->
+
       <div class="l3-L-contact-image">
       </div>
-      <!-- L3-R -->
+
       <div class="l3-R-contact">
         <div class="l4-contact-text">
-          <h1>Contact</h1>
+          <h1 class="green-text">Contact</h1>
           <p>Left align this text and the heading.
             Make it flush to my 80px left vertical margin.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dapibus ex. Ut interdum lobortis dui nec ornare. Pellentesque tincidunt urna rhoncus rutrum vulputate. Pellentesque pulvinar auctor tellus, sed sodales quam suscipit
@@ -145,48 +116,26 @@
   </div>
 
 
+  <!-- ---------- GOOGLE MAPS ---------- -->
 
+  <h1>My First Google Map</h1>
 
+  <div id="googleMap" style="width:100%;height:400px;"></div>
 
+  <script>
+    function myMap() {
+      var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+  </script>
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
+  <!-- ---------- FOOTER ---------- -->
 
-
-<!-- GOOGLE MAPS -->
-<h1>My First Google Map</h1>
-
-<div id="googleMap" style="width:100%;height:400px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-
-</main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- FOOTER -->
-
-  <!-- L1 -->
   <footer>
     <!-- L2 -->
     <div class="l2-1of4-footer">
@@ -223,5 +172,3 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
   </footer>
 
 </body>
-
-</html>
